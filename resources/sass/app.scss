@@ -1,0 +1,46 @@
+// Bootstrap & Icons
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+    --ink: #14213D;
+    --teal: #0F8B8D;
+    --teal-dark: #0b6c6e;
+    --sand: #E9DFCB;
+    --paper: #F7F8FA;
+    --bs-body-bg: var(--paper);
+    --bs-body-color: var(--ink);
+    --bs-body-font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    --bs-link-color: var(--teal);
+    --bs-link-hover-color: var(--teal-dark);
+}
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+h1, h2, h3, h4, h5, .navbar-brand { font-family: Georgia, "Times New Roman", serif; }
+
+.bg-ink { background-color: var(--ink) !important; }
+.text-teal { color: var(--teal) !important; }
+footer { color: #cfd6e4; }
+
+/* Navbar: halaman aktif berlatar teal */
+.navbar .nav-link { border-radius: .4rem; padding: .4rem .9rem; }
+.navbar .nav-link:hover { background: rgba(255,255,255,.14); }
+.navbar .nav-link.active { background: var(--teal); color: #fff; }
+
+/* Tombol */
+.btn-teal { background: var(--teal); border-color: var(--teal); color: #fff; }
+.btn-teal:hover, .btn-teal:focus { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+.btn-outline-ink { border: 2px solid var(--ink); color: var(--ink); }
+.btn-outline-ink:hover { background: var(--ink); color: #fff; }
+
+/* Foto profil */
+.foto { max-width: 240px; width: 100%; border-radius: 1.5rem; border: 4px solid var(--sand); }
+
+/* Kartu dengan garis kiri teal */
+.item { border: 1px solid #D5D9E0; border-left: 5px solid var(--teal); border-radius: .25rem; }
+
+/* Badge keahlian */
+.tag { background: var(--sand); color: var(--ink); font-weight: 400; font-size: .85rem; padding: .35rem .75rem; }
+
+.mw-text { max-width: 65ch; }
